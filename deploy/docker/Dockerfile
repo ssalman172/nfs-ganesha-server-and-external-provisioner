@@ -18,7 +18,7 @@ ARG GANESHA_VERSION=V4.0.8
 
 FROM ghcr.io/kubernetes-sigs/nfs-ganesha:${GANESHA_VERSION}
 
-ARG binary=nfs-provisioner
+ARG binary=bin/nfs-provisioner
 COPY ${binary} /nfs-provisioner
 
 # expose mountd 20048/tcp and nfsd 2049/tcp and rpcbind 111/tcp 111/udp

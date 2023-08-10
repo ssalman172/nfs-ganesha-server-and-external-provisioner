@@ -101,7 +101,7 @@ spec:
                 - DAC_READ_SEARCH
                 - SYS_RESOURCE
           args:
-            - "-provisioner=example.com/nfs"
+            - "-provisioner=nfs-provisioner"
           env:
             - name: POD_IP
               valueFrom:
